@@ -1,27 +1,39 @@
 
-import { AlertCircle, Mail, MapPin, Phone } from 'lucide-react';
+import { AlertCircle, Mail, MapPin, Phone, MessageSquare, Send } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
+import { Button } from '@/components/ui/button';
 
 const Contact = () => {
   return (
     <main>
       {/* Hero Section */}
-      <section className="pt-32 pb-20">
+      <section className="pt-32 pb-20 bg-gradient-to-b from-primary/5 to-background">
         <div className="container">
-          <div className="text-center space-y-4 max-w-3xl mx-auto animated-element">
-            <h1 className="text-4xl md:text-5xl font-bold">Get In Touch</h1>
+          <div className="text-center space-y-6 max-w-3xl mx-auto animated-element">
+            <div className="inline-flex items-center justify-center p-2 bg-primary/10 rounded-full mb-4">
+              <MessageSquare className="h-6 w-6 text-primary mr-2" />
+              <span className="font-medium text-primary">Get In Touch</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold">Let's Start a Conversation</h1>
             <p className="text-xl text-muted-foreground">
-              Have a project in mind or want to discuss opportunities? I'd love to hear from you.
+              Have a project in mind or want to discuss opportunities? I'm here to help turn your ideas into reality.
             </p>
+            <div className="pt-4">
+              <Button size="lg" className="rounded-full" asChild>
+                <a href="#contact-form">
+                  Contact Me <Send className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16">
+      <section className="py-20" id="contact-form">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div className="space-y-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div className="space-y-8 animated-element">
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold">Contact Information</h2>
                 <p className="text-muted-foreground">
@@ -30,38 +42,44 @@ const Contact = () => {
               </div>
 
               <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 p-3 rounded-lg">
+                <div className="flex items-start gap-4 bg-card p-4 rounded-lg border border-border hover:border-primary/40 hover:shadow-md transition-all">
+                  <div className="bg-primary/10 p-3 rounded-full">
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
                   <div>
                     <h3 className="font-medium text-lg">Email</h3>
-                    <p className="text-muted-foreground">example@mail.com</p>
+                    <a href="mailto:example@mail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                      example@mail.com
+                    </a>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 p-3 rounded-lg">
+                <div className="flex items-start gap-4 bg-card p-4 rounded-lg border border-border hover:border-primary/40 hover:shadow-md transition-all">
+                  <div className="bg-primary/10 p-3 rounded-full">
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
                   <div>
                     <h3 className="font-medium text-lg">Phone</h3>
-                    <p className="text-muted-foreground">(123) 456-7890</p>
+                    <a href="tel:(123) 456-7890" className="text-muted-foreground hover:text-primary transition-colors">
+                      (123) 456-7890
+                    </a>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 p-3 rounded-lg">
+                <div className="flex items-start gap-4 bg-card p-4 rounded-lg border border-border hover:border-primary/40 hover:shadow-md transition-all">
+                  <div className="bg-primary/10 p-3 rounded-full">
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
                   <div>
                     <h3 className="font-medium text-lg">Location</h3>
-                    <p className="text-muted-foreground">San Francisco, CA, United States</p>
+                    <p className="text-muted-foreground">
+                      San Francisco, CA, United States
+                    </p>
                   </div>
                 </div>
               </div>
 
-              <div className="p-6 bg-secondary rounded-lg border border-border">
+              <div className="p-6 bg-primary/5 rounded-lg border border-primary/20">
                 <div className="flex gap-3 items-start">
                   <AlertCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <div>
@@ -72,9 +90,21 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
+
+              <div className="rounded-lg overflow-hidden border border-border h-[250px]">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555098464!2d-122.50764017949193!3d37.75781499657613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sus!4v1620440879210!5m2!1sen!2sus" 
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  allowFullScreen 
+                  loading="lazy"
+                  title="San Francisco Map"
+                ></iframe>
+              </div>
             </div>
 
-            <div className="bg-card border border-border rounded-lg p-6 lg:p-8">
+            <div className="bg-card border border-border rounded-lg p-6 lg:p-8 shadow-sm hover:shadow-md transition-all animated-element delay-200">
               <h2 className="text-2xl font-bold mb-6">Send Me a Message</h2>
               <ContactForm />
             </div>
@@ -108,7 +138,7 @@ const Contact = () => {
             ].map((faq, index) => (
               <div 
                 key={index}
-                className="bg-background border border-border rounded-lg p-6 hover:shadow-md transition-all"
+                className="bg-background border border-border rounded-lg p-6 hover:shadow-md transition-all hover:border-primary/30"
               >
                 <h3 className="font-bold text-lg mb-2">{faq.question}</h3>
                 <p className="text-muted-foreground">{faq.answer}</p>
