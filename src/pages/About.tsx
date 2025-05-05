@@ -1,7 +1,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Calendar, FileText, Graduation, MapPin } from 'lucide-react';
+import { ArrowRight, Calendar, FileText, GraduationCap, MapPin } from 'lucide-react';
 
 const About = () => {
   return (
@@ -54,7 +54,7 @@ const About = () => {
                   <span>Available for Freelance</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Graduation size={18} className="text-primary" />
+                  <GraduationCap size={18} className="text-primary" />
                   <span>Computer Science Degree</span>
                 </div>
               </div>
