@@ -1,4 +1,3 @@
-
 import { AlertCircle, Mail, MapPin, Phone, MessageSquare, Send } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
 import { Button } from '@/components/ui/button';
@@ -48,8 +47,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-lg">Email</h3>
-                    <a href="mailto:example@mail.com" className="text-muted-foreground hover:text-primary transition-colors">
-                      example@mail.com
+                    <a href="mailto:johnmaitai10@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                      johnmaitai10@gmail.com
                     </a>
                   </div>
                 </div>
@@ -60,8 +59,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-lg">Phone</h3>
-                    <a href="tel:(123) 456-7890" className="text-muted-foreground hover:text-primary transition-colors">
-                      (123) 456-7890
+                    <a href="tel:+254769773915" className="text-muted-foreground hover:text-primary transition-colors">
+                      +254 769 773 915
                     </a>
                   </div>
                 </div>
@@ -73,7 +72,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-medium text-lg">Location</h3>
                     <p className="text-muted-foreground">
-                      San Francisco, CA, United States
+                      Nairobi, Kenya
                     </p>
                   </div>
                 </div>
@@ -93,13 +92,13 @@ const Contact = () => {
 
               <div className="rounded-lg overflow-hidden border border-border h-[250px]">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555098464!2d-122.50764017949193!3d37.75781499657613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sus!4v1620440879210!5m2!1sen!2sus" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255281.19036281522!2d36.70730798656889!3d-1.3031933981209557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1673623573540!5m2!1sen!2sus" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 
                   allowFullScreen 
                   loading="lazy"
-                  title="San Francisco Map"
+                  title="Nairobi Map"
                 ></iframe>
               </div>
             </div>

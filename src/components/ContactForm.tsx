@@ -61,10 +61,11 @@ const ContactForm = () => {
     if (validateForm()) {
       setIsSubmitting(true);
       
-      // Simulate form submission
+      // In a real implementation, you would send the form data to johnmaitai10@gmail.com
+      // For now, we'll simulate form submission
       setTimeout(() => {
         toast.success('Message sent successfully!', {
-          description: 'I will get back to you as soon as possible.',
+          description: 'Thank you for reaching out. I will get back to you soon.',
         });
         
         // Reset form
