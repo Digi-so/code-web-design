@@ -11,6 +11,7 @@ const projects: Project[] = [
     description: "A fully responsive e-commerce platform with cart functionality and payment integration.",
     tags: ["React", "Tailwind CSS", "Stripe"],
     category: "web",
+    imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
     liveUrl: "#",
     githubUrl: "#"
   },
@@ -20,6 +21,7 @@ const projects: Project[] = [
     description: "A drag-and-drop task management application with user authentication and real-time updates.",
     tags: ["TypeScript", "Firebase", "React"],
     category: "app",
+    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475",
     liveUrl: "#",
     githubUrl: "#"
   },
@@ -29,6 +31,7 @@ const projects: Project[] = [
     description: "A modern landing page for a restaurant with online reservation system and menu display.",
     tags: ["HTML", "CSS", "JavaScript"],
     category: "web",
+    imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
     liveUrl: "#",
     githubUrl: "#"
   },
@@ -38,6 +41,7 @@ const projects: Project[] = [
     description: "A weather forecasting application that shows current and upcoming weather using public APIs.",
     tags: ["React", "API", "ChartJS"],
     category: "app",
+    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475",
     liveUrl: "#",
     githubUrl: "#"
   },
@@ -47,6 +51,7 @@ const projects: Project[] = [
     description: "A customizable portfolio template for creative professionals with dark/light mode.",
     tags: ["React", "Tailwind CSS", "Framer Motion"],
     category: "web",
+    imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
     liveUrl: "#",
     githubUrl: "#"
   },
@@ -56,6 +61,7 @@ const projects: Project[] = [
     description: "A personal finance application to track expenses and visualize spending patterns.",
     tags: ["React", "ChartJS", "Firebase"],
     category: "app",
+    imageUrl: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
     liveUrl: "#",
     githubUrl: "#"
   }

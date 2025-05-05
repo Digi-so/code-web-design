@@ -2,6 +2,7 @@
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar, FileText, GraduationCap, MapPin } from 'lucide-react';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const About = () => {
   return (
@@ -24,10 +25,14 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px]">
               <div className="absolute inset-0 bg-primary/10 rounded-lg z-0"></div>
-              <div className="absolute inset-0 -translate-x-4 -translate-y-4 bg-secondary border border-border rounded-lg z-10">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-2xl text-muted-foreground font-heading">Profile Image</span>
-                </div>
+              <div className="absolute inset-0 -translate-x-4 -translate-y-4 bg-secondary border border-border rounded-lg z-10 overflow-hidden">
+                <AspectRatio ratio={3/4} className="h-full">
+                  <img 
+                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" 
+                    alt="Professional portrait of frontend developer" 
+                    className="object-cover w-full h-full"
+                  />
+                </AspectRatio>
               </div>
             </div>
 
