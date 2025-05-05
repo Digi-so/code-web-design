@@ -4,6 +4,7 @@ import ProjectsSection from '@/components/ProjectsSection';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const Index = () => {
   return (
@@ -19,6 +20,26 @@ const Index = () => {
             <p className="text-muted-foreground max-w-2xl mx-auto">
               I specialize in front-end development with expertise in modern frameworks and libraries.
             </p>
+          </div>
+          
+          <div className="flex flex-col md:flex-row gap-12 items-center mb-12">
+            <Avatar className="h-40 w-40 border-4 border-primary/20">
+              <AvatarImage 
+                src="/lovable-uploads/53d62265-fa15-4f27-804f-98fb8f5a5d4a.png" 
+                alt="Profile" 
+                className="object-cover"
+              />
+              <AvatarFallback>JM</AvatarFallback>
+            </Avatar>
+            
+            <div className="space-y-4 max-w-2xl">
+              <h3 className="text-2xl font-semibold">A passionate developer from Nairobi</h3>
+              <p className="text-muted-foreground">
+                With a focus on creating elegant, efficient, and user-friendly web applications, 
+                I bring designs to life with clean code and modern technologies. I'm dedicated to 
+                continuous learning and keeping up with the latest industry trends.
+              </p>
+            </div>
           </div>
           
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
