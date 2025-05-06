@@ -1,4 +1,3 @@
-
 import HeroSection from '@/components/HeroSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import { Button } from '@/components/ui/button';
@@ -25,7 +24,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row gap-12 items-center mb-12">
             <Avatar className="h-40 w-40 border-4 border-primary/20">
               <AvatarImage 
-                src="/lovable-uploads/53d62265-fa15-4f27-804f-98fb8f5a5d4a.png" 
+                src="./lovable-uploads/53d62265-fa15-4f27-804f-98fb8f5a5d4a.png" 
                 alt="Profile" 
                 className="object-cover"
               />

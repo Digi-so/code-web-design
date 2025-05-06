@@ -38,7 +38,7 @@ const HeroSection = () => {
             <div className="absolute inset-0 -translate-x-4 -translate-y-4 bg-secondary border border-border rounded-lg z-10 overflow-hidden">
               <AspectRatio ratio={16/9} className="h-full">
                 <img 
-                  src="/lovable-uploads/53d62265-fa15-4f27-804f-98fb8f5a5d4a.png" 
+                  src="./lovable-uploads/53d62265-fa15-4f27-804f-98fb8f5a5d4a.png" 
                   alt="Professional portrait" 
                   className="object-cover w-full h-full"
                 />

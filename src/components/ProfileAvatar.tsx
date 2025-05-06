@@ -16,7 +16,7 @@ const ProfileAvatar = ({ className, size = "md" }: ProfileAvatarProps) => {
 
   return (
     <Avatar className={`${sizeClasses[size]} ${className || ""}`}>
-      <AvatarImage src="/lovable-uploads/53d62265-fa15-4f27-804f-98fb8f5a5d4a.png" alt="Profile" />
+      <AvatarImage src="./lovable-uploads/53d62265-fa15-4f27-804f-98fb8f5a5d4a.png" alt="Profile" />
       <AvatarFallback>JM</AvatarFallback>
     </Avatar>
   );
